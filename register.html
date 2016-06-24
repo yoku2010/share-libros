@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.polymer-form.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" sizes="24x24" href="img/favicon.png">
-  <body>
+  <body class="no-scroll">
     <header>
       <div class="header-main-container">
         <!-- Submenu -->
@@ -75,9 +76,53 @@
         <h3>SHARE <span>LIBROS</span></h3>
         <h1>REGISTER</h1>
       </div>
-      <div class="side-section"></div>
+      <div class="side-section">
+        <div class="padding10">
+          <div class="detail-box">
+            <h3>REGISTER NOW:</h3>
+            <p>
+              Fill in the form below to get instant access.
+            </p>
+          </div>
+          <div class="detail-box">
+            <div class="row">
+              <form id="id_register_form" class="polymer-form" action="" method="post">
+                <div class="col-md-12">
+                  <div id="form_msg" class="polymer-msg"></div>
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_first_name" label="First Name" maxlength="64" name="first_name" type="text" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_last_name" label="Last Name" maxlength="64" name="last_name" type="text" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_email" label="Email" maxlength="64" name="email" type="email" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_password" label="Password" maxlength="64" name="password" type="password" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_mobile" label="Mobile" maxlength="64" name="mobile" type="text" />
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group text-right">
+                    <p id="form_loading" class="ajax-loading" style="display:none;">
+                      <img src="img/ajax-loader.gif">
+                    </p>
+                    <button type="submit" class="btn btn-holo">Register</button>
+                    <button type="button" id="reset_btn" class="btn btn-holo-empty">Reset</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="js/libs/jquery-1.11.3.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.polymer-form.min.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>

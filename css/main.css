@@ -62,7 +62,12 @@ body {
   margin: 0;
   font-family: PlexesLightPro;
 }
-
+.no-scroll {
+  overflow: hidden;
+}
+.scroll {
+  overflow: auto;
+}
 /* Custom Links */
 a {
   color: #CCCCCC;
@@ -444,6 +449,7 @@ header .header-main-container .copyright .year {
   left: 400px;
   right: 0;
   bottom: 0;
+  overflow: auto;
 }
 .padding10 {
   padding: 10px;
