@@ -89,7 +89,7 @@ header {
   width: 95px;
   height: 100%;
   position: fixed;
-  z-index: 2000;
+  z-index: 10;
   overflow: hidden;
 }
 header .header-main-container {
@@ -125,7 +125,6 @@ header .header-main-container .submenu li a {
 }
 header .header-main-container a.logo {
   position: relative;
-  z-index: 1;
   color: #F6D641;
   float: left;
   width: 100%;
@@ -167,7 +166,7 @@ header .header-main-container .navbar ul.nav li a span {
   top: 50px;
   margin: 0 7px;
 }
-header .header-main-container .navbar ul.nav li a:hover, header .header-main-container .navbar ul.nav li a:focus {
+header .header-main-container .navbar ul.nav li a:hover, header .header-main-container .navbar ul.nav li a:focus, .side-heading h1 {
   color: #F6D641;
 }
 header .header-main-container .navbar ul.nav li.active a {
@@ -266,6 +265,7 @@ header .header-main-container .copyright .year {
 
 /* Custom body */
 .main-body {
+  position: relative;
   display: block;
   margin-left: 95px;
   background: url(../img/background.jpg) scroll repeat-x 0 0 transparent;
@@ -391,4 +391,57 @@ header .header-main-container .copyright .year {
   background-color: #F6D641;
   padding: 20px 0 10px;
   color: #958843;
+}
+
+/* Side Heading */
+.side-heading {
+  width: 400px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 95px;
+  z-index: 9;
+}
+.side-heading .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  opacity: 0.3;
+  z-index: 1;
+  border-right: 1px solid #000;
+}
+.side-heading h1 {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 40px;
+  margin-top: 45px;
+  font-weight: 600;
+  font-size: 125px;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-shadow: 1px 1px 0px #000;
+}
+.side-heading h3 {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 40px;
+  color: #FFF;
+  font-size: 25px;
+  letter-spacing: 0.2em;
+  line-height: 1em;
+  text-shadow: 1px 1px 0px #000;
+  opacity: 1;
+}
+.side-section {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 400px;
+  right: 0;
+  bottom: 0;
 }
