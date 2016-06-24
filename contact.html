@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.polymer-form.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" sizes="24x24" href="img/favicon.png">
   <body>
@@ -32,7 +33,7 @@
           </ul>
         </nav>
         <!-- Logo -->
-        <a href="#" class="logo">
+        <a href="#" class="logo" title="Share Libros">
           <i class="fa fa-share-alt-square"></i>
         </a>
         <!-- Mainmenu -->
@@ -75,21 +76,53 @@
         <h3>SHARE <span>LIBROS</span></h3>
         <h1>CONTACT</h1>
       </div>
-      <div class="side-section"></div>
+      <div class="side-section">
+        <div class="padding10">
+          <div class="detail-box">
+            <h3>SEND YOUR QUERY OR FEEDBACK:</h3>
+            <p>
+              24/7 support is available.
+            </p>
+            <p>
+              Submit your query/feedback with your contact details. We will fix your issue and notify.
+            </p>
+          </div>
+          <div class="detail-box">
+            <div class="row">
+              <form id="id_contact_form" class="polymer-form" action="" method="post">
+                <div class="col-md-12">
+                  <div id="form_msg" class="polymer-msg"></div>
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_full_name" label="Full Name" maxlength="64" name="full_name" type="text" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_subject" label="Subject" maxlength="64" name="subject" type="text" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_email" label="Email" maxlength="64" name="email" type="text" />
+                </div>
+                <div class="col-md-12">
+                  <textarea class="polymer-field" autocomplete="off" id="id_message" name="message" rows="8" cols="40" label="Message"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group text-right">
+                    <p id="form_loading" class="ajax-loading" style="display:none;">
+                      <img src="img/ajax-loader.gif">
+                    </p>
+                    <button type="submit" class="btn btn-holo">Submit</button>
+                    <button type="button" id="cancel_btn" class="btn btn-holo-empty">Cancel</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
-     <script src="https://www.google-analytics.com/analytics.js"></script><script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-    -->
-
     <script src="js/libs/jquery-1.11.3.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.polymer-form.min.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

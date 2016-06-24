@@ -166,7 +166,7 @@ header .header-main-container .navbar ul.nav li a span {
   top: 50px;
   margin: 0 7px;
 }
-header .header-main-container .navbar ul.nav li a:hover, header .header-main-container .navbar ul.nav li a:focus, .side-heading h1 {
+header .header-main-container .navbar ul.nav li a:hover, header .header-main-container .navbar ul.nav li a:focus, .side-heading h1, span.color {
   color: #F6D641;
 }
 header .header-main-container .navbar ul.nav li.active a {
@@ -297,7 +297,7 @@ header .header-main-container .copyright .year {
   text-shadow: 2px 1px 0px #212224;
   text-transform: uppercase;
 }
-.main-header p {
+.main-header p, .detail-box p {
   color: #CCCCCC;
   letter-spacing: 0.03em;
   text-shadow: 2px 1px 0px #474747;
@@ -444,4 +444,49 @@ header .header-main-container .copyright .year {
   left: 400px;
   right: 0;
   bottom: 0;
+}
+.padding10 {
+  padding: 10px;
+}
+.space10 {
+  height: 10px;
+}
+.detail-box {
+  padding: 10px;
+}
+.detail-box h3 {
+  letter-spacing: 0.11em;
+  font-weight: 300;
+  text-shadow: 1px 1px 0px #000;
+  color: #FFF;
+}
+.detail-box p span.focus {
+  font-size: 48px;
+  font-family: "Tungsten A","Tungsten B";
+  color: #FFF;
+  line-height: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+p.follow-us {
+  text-align: right;
+}
+p.follow-us a {
+  padding: 10px;
+}
+.ajax-loading {
+  display: inline-block;
+  margin: 5px;
+}
+.btn.btn-holo {
+  color: #F6D641;
+  background: transparent;
+  border: 2px solid #F6D641;
+  text-shadow: 0 0 0;
+}
+.btn.btn-holo-empty {
+  color: #AAA;
+  background: transparent;
+  border: 2px solid #AAA;
+  text-shadow: 0 0 0;
 }
