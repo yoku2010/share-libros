@@ -217,7 +217,7 @@ header .header-main-container .extramenu ul li a span.text {
   visibility: hidden;
   opacity: 0;
 }
-header .header-main-container .extramenu ul li a:hover span.text {
+header .header-main-container .extramenu ul li.active a span, header .header-main-container .extramenu ul li a:hover span.text {
   visibility: visible;
   opacity: 1;
 }
@@ -226,11 +226,11 @@ header .header-main-container .extramenu ul li a i {
   line-height: 94px !important;
   font-size: 30px;
 }
-header .header-main-container .extramenu ul li a:hover i {
+header .header-main-container .extramenu ul li.active a i, header .header-main-container .extramenu ul li a:hover i {
   line-height: 70px !important;
   font-size: 25px;
 }
-header .header-main-container .extramenu ul li a:hover, header .header-main-container .extramenu ul li a.active {
+header .header-main-container .extramenu ul li a:hover, header .header-main-container .extramenu ul li.active a {
   background-color: #f6d641 !important;
   color: #222;
 }
