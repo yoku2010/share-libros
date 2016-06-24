@@ -5,4 +5,9 @@ $(function(){
         base_color: '#CCC',
         active_color: '#F6D641'
     });
+    $('.map').click(function(e) {
+        $(this).find('iframe').css('pointer-events', 'all');
+    }).mouseleave(function(e) {
+        $(this).find('iframe').css('pointer-events', 'none');
+    });
 });
