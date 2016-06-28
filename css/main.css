@@ -539,24 +539,23 @@ p.follow-us a {
 }
 /* Top Heading */
 .top-heading {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 95px;
   right: 0;
   z-index: 9;
-  height: 90px;
+  height: 140px;
 }
 .top-heading .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 50px;
   background-color: #111;
   opacity: 0.3;
   z-index: 1;
-  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .top-heading h1 {
   position: absolute;
@@ -583,12 +582,53 @@ p.follow-us a {
   text-shadow: 1px 1px 0px #000;
   opacity: 1;
 }
+.top-heading .pagemenu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px dashed #999;
+  z-index: 2;
+}
+.top-heading .pagemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.top-heading .pagemenu ul li {
+  width: 100px;
+  float: right;
+}
+.top-heading .pagemenu ul li a {
+  font-size: 21px;
+  float: left;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-family: "Tungsten A", "Tungsten B";
+  padding: 10px;
+  color: #242424;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+.top-heading .pagemenu ul li a:hover, .top-heading .pagemenu ul li.active a {
+  color: #F6D641;
+  border-bottom: 1px solid #F6D641;
+}
 .top-section {
   position: absolute;
   z-index: 8;
-  top: 90px;
+  top: 140px;
   left: 0;
   right: 0;
   bottom: 0;
   overflow: auto;
+}
+.library {
+  border: 1px solid #F6D641;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #212224;
 }

@@ -84,9 +84,55 @@
         <div class="overlay"></div>
         <h3>SHARE <span>LIBROS</span></h3>
         <h1>LIBRARY</h1>
+        <nav class="pagemenu">
+          <ul>
+            <li>
+              <a href="#report">
+                <span class="text">REPORT</span>
+              </a>
+            </li>
+            <li>
+              <a href="#add">
+                <span class="text">ADD</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="#view">
+                <span class="text">View</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="top-section">
-        <div class="padding10">
+        <div id="add" class="padding10">
+          <div class="detail-box">
+            <h3>VIEW LIBRARY:</h3>
+            <p>
+              You can view your all libraries.
+            </p>
+          </div>
+          <div class="detail-box">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="library">
+
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="library">
+
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="library">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="add" class="padding10">
           <div class="detail-box">
             <h3>ADD LIBRARY:</h3>
             <p>
@@ -127,6 +173,7 @@
     <script src="js/libs/jquery-1.11.3.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/jquery.polymer-form.min.js"></script>
+    <script src="js/admin-utils.js"></script>
     <script src="js/library.js"></script>
   </body>
 </html>
