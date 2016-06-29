@@ -85,18 +85,13 @@
         <h3>SHARE <span>LIBROS</span></h3>
         <h1>LIBRARY</h1>
         <nav class="pagemenu">
-          <ul>
-            <li>
-              <a href="#report">
-                <span class="text">REPORT</span>
-              </a>
-            </li>
+          <ul class="tab-menu">
             <li>
               <a href="#add">
                 <span class="text">ADD</span>
               </a>
             </li>
-            <li class="active">
+            <li>
               <a href="#view">
                 <span class="text">View</span>
               </a>
@@ -105,34 +100,148 @@
         </nav>
       </div>
       <div class="top-section">
-        <div id="add" class="padding10">
+        <div id="view" class="tab-panel padding10">
           <div class="detail-box">
             <h3>VIEW LIBRARY:</h3>
             <p>
-              You can view your all libraries.
+              View your all libraries and category.
             </p>
           </div>
           <div class="detail-box">
             <div class="row">
               <div class="col-md-4">
                 <div class="library">
-
+                  <div class="rack">
+                    <div class="overlay"></div>
+                    <div class="stuff-list">
+                      <a href="#" class="stuff">
+                        <i class="fa fa-book"></i>
+                        <span>50 Books &amp; Novels</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-music"></i>
+                        <span>15 CD &amp; DVD</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-soccer-ball-o"></i>
+                        <span>11 Game Items</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-smile-o"></i>
+                        <span>30 Other Stuff</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <ul>
+                      <li class="left">
+                        <a data-placement="right" data-toggle="tooltip" title="Lock/Unlock" href="#" class="small">
+                          <i class="fa fa-unlock"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">delete</a>
+                      </li>
+                      <li>
+                        <a href="#">edit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="foot">
+                    <div class="text">My Best Collection</div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="library">
-
+                  <div class="rack">
+                    <div class="overlay"></div>
+                    <div class="stuff-list">
+                      <a href="#" class="stuff">
+                        <i class="fa fa-book"></i>
+                        <span>30 Books &amp; Novels</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-music"></i>
+                        <span>10 CD &amp; DVD</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-soccer-ball-o"></i>
+                        <span>14 Game Items</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-smile-o"></i>
+                        <span>10 Other Stuff</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <ul>
+                      <li class="left">
+                        <a data-placement="right" data-toggle="tooltip" title="Lock/Unlock" href="#" class="small">
+                          <i class="fa fa-lock"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">delete</a>
+                      </li>
+                      <li>
+                        <a href="#">edit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="foot">
+                    <div class="text">Under 18</div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="library">
-
+                  <div class="rack">
+                    <div class="overlay"></div>
+                    <div class="stuff-list">
+                      <a href="#" class="stuff">
+                        <i class="fa fa-book"></i>
+                        <span>16 Books &amp; Novels</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-music"></i>
+                        <span>9 CD &amp; DVD</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-soccer-ball-o"></i>
+                        <span>31 Game Items</span>
+                      </a>
+                      <a href="#" class="stuff">
+                        <i class="fa fa-smile-o"></i>
+                        <span>17 Other Stuff</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="option">
+                    <ul>
+                      <li class="left">
+                        <a data-placement="right" data-toggle="tooltip" title="Lock/Unlock" href="#" class="small">
+                          <i class="fa fa-unlock"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">delete</a>
+                      </li>
+                      <li>
+                        <a href="#">edit</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="foot">
+                    <div class="text">Childhood</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="add" class="padding10">
+        <div id="add" class="tab-panel padding10">
           <div class="detail-box">
             <h3>ADD LIBRARY:</h3>
             <p>
@@ -149,10 +258,10 @@
                   <input class="polymer-field" autocomplete="off" id="id_library_name" label="Library Name" maxlength="64" name="library_name" type="text" />
                 </div>
                 <div class="col-md-12" style="height:100px;">
-                  <select class="polymer-field" autocomplete="off" id="id_category" label="Category" maxlength="64" name="category">
+                  <select class="polymer-field" autocomplete="off" id="id_access" label="Access" maxlength="64" name="access">
                     <option value=""></option>
-                    <option value="books">Books</option>
-                    <option value="novels">Novels</option>
+                    <option value="private">Private</option>
+                    <option value="public">Public</option>
                   </select>
                 </div>
                 <div class="col-md-12">

@@ -631,4 +631,116 @@ p.follow-us a {
   height: 300px;
   border-radius: 5px;
   box-shadow: 0 5px 5px #212224;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.library .foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212224;
+  padding: 20px;
+  height: 62px;
+}
+.library .foot .text {
+  color: #FFF;
+  font-family: "Tungsten A", "Tungsten B";
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.library .option {
+  position: absolute;
+  bottom: 62px;
+  left: 0;
+  right: 0;
+  background-color: #F6D641;
+}
+.library .option ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+}
+.library .option ul li {
+  float: right;
+  overflow: hidden;
+}
+.library .option ul li.left {
+  float: left;
+}
+.library .option ul li a {
+  cursor: pointer;
+  padding: 5px;
+  color: #212224;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+}
+.library .option ul li a.small {
+  width: 40px;
+}
+.library .option ul li a:hover {
+  background-color: #212224;
+  color: #F6D641;
+}
+.library .option ul li a i {
+  font-size: 20px;
+}
+.library .rack {
+  position: absolute;
+  bottom: 92px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.library .rack .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  opacity: 0.3;
+  z-index: 1;
+  border-right: 1px solid #000;
+}
+.library .rack .stuff {
+  position: relative;
+  float: left;
+  z-index: 2;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  height: 102px;
+  padding: 30px;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.library .rack {
+  border: 1px solid #111;
+}
+.library .rack .stuff:hover {
+  background-color: #111;
+  opacity: 0.3;
+}
+.library .rack .stuff i {
+  color: #FFF;
+  font-size: 25px;
+}
+.library .rack .stuff span {
+  color: #F6D641;
+  display: block;
+}
+select option {
+  margin:40px;
+  background: rgba(0,0,0,0.3);
+  color:#fff;
+  text-shadow:0 1px 0 rgba(0,0,0,0.4);
+}
+/* tab */
+.tab-panel {
+  display: none;
 }
