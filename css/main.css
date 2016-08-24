@@ -744,3 +744,11 @@ select option {
 .tab-panel {
   display: none;
 }
+/* table */
+table thead {
+  background-color: #F6D641;
+}
+table tbody {
+  background-color: #3B3B3B;
+  color: #FAFAFA;
+}

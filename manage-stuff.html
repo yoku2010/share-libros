@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.polymer-form.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" sizes="24x24" href="img/favicon.png">
   <body class="no-scroll">
@@ -79,9 +80,187 @@
       <a href="login.html" data-placement="left" data-toggle="tooltip" title="Logout" class="logout-btn">
         <i class="fa fa-sign-out"></i>
       </a>
+      <div class="top-heading">
+        <div class="overlay"></div>
+        <h3>SHARE <span>LIBROS</span></h3>
+        <h1>STUFF</h1>
+        <nav class="pagemenu">
+          <ul class="tab-menu">
+            <li>
+              <a href="#add">
+                <span class="text">ADD</span>
+              </a>
+            </li>
+            <li>
+              <a href="#view">
+                <span class="text">View</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="top-section">
+        <div id="view" class="tab-panel padding10">
+          <div class="detail-box">
+            <h3>VIEW STUFF:</h3>
+            <p>
+              View your all stuff in libraries.
+            </p>
+          </div>
+          <div class="detail-box">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Library</th>
+                      <th>Category</th>
+                      <th>Name</th>
+                      <th>Author Name</th>
+                      <th>Description</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>My Best Collection</td>
+                      <td>Books &amp; Novels</td>
+                      <td>Talk like TED</td>
+                      <td>A.K.</td>
+                      <td>-</td>
+                      <td>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Quick View">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Edit">
+                          <i class="fa fa-pencil"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Delete">
+                          <i class="fa fa-times"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>My Best Collection</td>
+                      <td>Books &amp; Novels</td>
+                      <td>Talk like TED</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Quick View">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Edit">
+                          <i class="fa fa-pencil"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Delete">
+                          <i class="fa fa-times"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>My Best Collection</td>
+                      <td>Books &amp; Novels</td>
+                      <td>Talk like TED</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Quick View">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Edit">
+                          <i class="fa fa-pencil"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Delete">
+                          <i class="fa fa-times"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>My Best Collection</td>
+                      <td>Books &amp; Novels</td>
+                      <td>Talk like TED</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Quick View">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Edit">
+                          <i class="fa fa-pencil"></i>
+                        </a>
+                        <a href="#" data-placement="top" data-toggle="tooltip" title="Delete">
+                          <i class="fa fa-times"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="add" class="tab-panel padding10">
+          <div class="detail-box">
+            <h3>ADD LIBRARY:</h3>
+            <p>
+              Fill your library details and add new library.
+            </p>
+          </div>
+          <div class="detail-box">
+            <div class="row">
+              <form id="id_library_stuff" class="polymer-form" action="" method="post">
+                <div class="col-md-12">
+                  <div id="form_msg" class="polymer-msg"></div>
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <select class="polymer-field" autocomplete="off" id="id_library" label="Library" maxlength="64" name="library">
+                    <option value=""></option>
+                    <option value="1">My Best Collection</option>
+                    <option value="2">Under 10</option>
+                    <option value="3">Childhood</option>
+                  </select>
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <select class="polymer-field" autocomplete="off" id="id_category" label="Category" maxlength="64" name="category">
+                    <option value=""></option>
+                    <option value="1">Books &amp; Novels</option>
+                    <option value="2">CD &amp; DVD</option>
+                    <option value="3">Game Items</option>
+                    <option value="3">Other Stuff</option>
+                  </select>
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_stuff_name" label="Name" maxlength="64" name="stuff_name" type="text" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_stuff_author" label="Author Name" maxlength="64" name="stuff_author" type="text" />
+                </div>
+                <div class="col-md-12" style="height:100px;">
+                  <input class="polymer-field" autocomplete="off" id="id_description" label="Description" maxlength="64" name="description" type="text" />
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group text-right">
+                    <p id="form_loading" class="ajax-loading" style="display:none;">
+                      <img src="img/ajax-loader.gif">
+                    </p>
+                    <button type="submit" class="btn btn-holo">Submit</button>
+                    <button type="button" id="cancel_btn" class="btn btn-holo-empty">Cancel</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="js/libs/jquery-1.11.3.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.polymer-form.min.js"></script>
     <script src="js/admin-utils.js"></script>
+    <script src="js/stuff.js"></script>
   </body>
 </html>
