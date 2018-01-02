@@ -1,0 +1,29 @@
+{
+  "name": "share-libros",
+  "version": "1.0.0",
+  "description": "To share book and novels",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoku2010/share-libros.git"
+  },
+  "keywords": [
+    "nodejs",
+    "google-cloud",
+    "library",
+    "books"
+  ],
+  "author": "Yogesh Kumar (yoku2010@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoku2010/share-libros/issues"
+  },
+  "homepage": "https://github.com/yoku2010/share-libros#readme",
+  "dependencies": {
+    "firebase-admin": "^5.6.0",
+    "firebase-functions": "^0.7.5"
+  }
+}
